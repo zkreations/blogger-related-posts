@@ -1,0 +1,42 @@
+{
+  "name": "blogger-related-posts",
+  "version": "1.0.0",
+  "description": "A simple script to display related posts in Blogger",
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist/",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c && terser dist/main.js --compress --mangle -o dist/main.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkreations/blogger-related-posts.git"
+  },
+  "keywords": [],
+  "author": "zkreations <daniel@zkreations.com> (https://zkreations.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkreations/blogger-related-posts/issues"
+  },
+  "homepage": "https://github.com/zkreations/blogger-related-posts#readme",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "browserslist": "^4.24.4",
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "rollup": "^4.40.0",
+    "terser": "^5.39.0"
+  },
+  "browserslist": [
+    ">= 1%",
+    "last 2 major versions",
+    "not dead",
+    "not edge <= 18",
+    "not ie <= 11"
+  ]
+}
