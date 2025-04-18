@@ -48,9 +48,7 @@
   function getDataAttributes({
     dataset = {}
   } = {}) {
-    const keys = ['defaultImage', 'imageParams', 'maxResults', 'observer', 'orderby', 'postId', 'rootMargin', 'shuffleLevel', 'summaryLength', 'tags', 'ytThumbnail'];
-    const data = Object.fromEntries(keys.filter(key => dataset[key] !== undefined).map(key => [key, normalizeData(dataset[key])]));
-    return data;
+    return Object.fromEntries(Object.entries(dataset).map(([key, value]) => [key, normalizeData(value)]));
   }
 
   // Get the post ID from the entry object
@@ -319,7 +317,7 @@
       if (!this.container) return;
       const config = {
         ...this.config,
-        ...getDataAttributes(this.pagerContainer)
+        ...getDataAttributes(this.container)
       };
       if (config.observer) {
         isObserver(this.container, async () => this.#create(config), {
