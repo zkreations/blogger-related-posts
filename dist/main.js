@@ -11,6 +11,7 @@
     template: '<a class="related-item" href="{postUrl}"><div class="related-image"><img class="related-image-src" src="{featuredImage}" alt="thumbnail"></div><div class="related-title">{title}</div></a>',
     textOnlyTemplate: '<a class="related-item" href="{postUrl}"><div class="related-title">{title}</div></a>',
     defaultImage: '',
+    directory: 'summary',
     imageParams: 'w300-h225-p-k-no-nu-rw-l80-e30',
     maxResults: 5,
     observer: true,
@@ -211,6 +212,18 @@
     return JSON.parse(labels).map(label => `label:"${label}"`).join('|');
   }
 
+  // Validate the directory parameter
+  // @param {string} directory - The directory to validate
+  // @returns {string} The validated directory
+  function directoryValidation(directory) {
+    const trimmed = directory.trim().toLowerCase();
+    const validDirectories = ['summary', 'default', 'full'];
+    if (validDirectories.includes(trimmed)) {
+      return trimmed;
+    }
+    return 'summary';
+  }
+
   // Fetch posts from the Blogger API
   // @param {Object} config - The configuration object
   // @returns {Promise<Array>} The fetched posts
@@ -218,14 +231,16 @@
     const {
       homeUrl,
       maxResults,
-      shuffleLevel,
       orderby,
+      shuffleLevel,
+      directory,
       tags
     } = config;
+    const dir = directoryValidation(directory);
     const labels = createQueryByTags(tags);
     const query = labels ? `&q=${labels}` : '';
     const totalPosts = maxResults + shuffleLevel;
-    const url = `${homeUrl}/feeds/posts/default?alt=json&max-results=${totalPosts}&orderby=${orderby}${query}`;
+    const url = `${homeUrl}/feeds/posts/${dir}?alt=json&max-results=${totalPosts}&orderby=${orderby}${query}`;
     const response = await fetch(url);
     const data = await response.json();
     return data.feed.entry;
