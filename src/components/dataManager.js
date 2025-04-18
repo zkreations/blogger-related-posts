@@ -25,26 +25,11 @@ function normalizeData (value) {
 // @param {Object} options.dataset - The dataset object
 // @returns {Object} The data attributes
 export function getDataAttributes ({ dataset = {} } = {}) {
-  const keys = [
-    'defaultImage',
-    'imageParams',
-    'maxResults',
-    'observer',
-    'orderby',
-    'postId',
-    'rootMargin',
-    'shuffleLevel',
-    'summaryLength',
-    'tags',
-    'ytThumbnail'
-  ]
-
-  const data = Object.fromEntries(keys
-    .filter(key => dataset[key] !== undefined)
-    .map(key => [key, normalizeData(dataset[key])])
+  return Object.fromEntries(
+    Object.entries(dataset).map(
+      ([key, value]) => [key, normalizeData(value)]
+    )
   )
-
-  return data
 }
 
 // Get the post ID from the entry object
