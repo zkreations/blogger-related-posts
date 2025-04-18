@@ -21,7 +21,7 @@ class RelatedPosts {
 
     const config = {
       ...this.config,
-      ...getDataAttributes(this.pagerContainer)
+      ...getDataAttributes(this.container)
     }
 
     if (config.observer) {
