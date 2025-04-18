@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.RelatedPosts = factory());
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.BloggerRelated = factory());
 })(this, (function () { 'use strict';
 
   // Define the default values for the blogger-related-posts configuration
@@ -318,7 +318,7 @@
     container.classList.add('related-loaded');
   }
 
-  class RelatedPosts {
+  class BloggerRelated {
     constructor(options = {}) {
       this.currentUrl = new URL(window.location.href);
       this.config = {
@@ -356,6 +356,6 @@
     }
   }
 
-  return RelatedPosts;
+  return BloggerRelated;
 
 }));
