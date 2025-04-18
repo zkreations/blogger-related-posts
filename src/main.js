@@ -3,7 +3,7 @@ import { getDataAttributes } from './components/dataManager'
 import { fetchPosts } from './components/feedManager'
 import { isObserver, createRelated } from './components/renderer'
 
-class RelatedPosts {
+class BloggerRelated {
   constructor (options = {}) {
     this.currentUrl = new URL(window.location.href)
 
@@ -48,4 +48,4 @@ class RelatedPosts {
   }
 }
 
-export default RelatedPosts
+export default BloggerRelated
