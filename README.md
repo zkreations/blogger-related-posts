@@ -4,7 +4,7 @@
 
 [![V](https://img.shields.io/npm/v/blogger-related-posts)](https://www.npmjs.com/package/blogger-related-posts) [![L](https://img.shields.io/npm/l/blogger-related-posts)](LICENSE)
 
-**Blogger Related Posts** is a plugin that easily generates related posts for Blogger using an enhanced algorithm based on date or relevance. [Live Demo →](https://www.zkreations.com/2025/04/mejores-entradas-relacionadas-blogger.html)
+**Blogger Related Posts** is a plugin that easily generates related posts for Blogger using an enhanced algorithm based on date or relevance. [Live Demo →](https://www.zkreations.com/2025/04/mejores-entradas-relacionadas-blogger.html#related-posts)
 
 ## Features
 
