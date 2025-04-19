@@ -70,7 +70,7 @@ You can customize **blogger-related-posts** using the following options:
 |-----------------------|---------|--------------------------------------------------|------------------------|
 | `relatedSelector`     | String  | Selector for the related posts container         | `#blog-related`        |
 | `template`            | String  | Template for the related posts                   | See [defaults.js](src/config/defaults.js) |
-| `textOnlyTemplate`    | String  | Template for the related posts without image     | See [defaults.js](src/config/defaults.js) |
+| `textOnlyTemplate`    | String  | Template for the related posts without image     | `null` |
 | `defaultImage`        | String  | Default image for the related posts              | `''`                   |
 | `directory`           | String  | Directory for the related posts                  | `summary`              |
 | `imageParams`         | String  | [Image parameters](http://zkreations.com/image-params) for the related posts | `s120-c` |
