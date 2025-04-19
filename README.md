@@ -1,4 +1,4 @@
-# blogger-related-post
+# blogger-related-posts
 
 <img src="https://raw.githubusercontent.com/zkreations/blogger-related-posts/main/logo.png" align="left" />
 
@@ -142,4 +142,4 @@ If you want to help me keep this and other related projects always up to date, y
 
 ## License
 
-**blogger-related-post** is licensed under the MIT License
+**blogger-related-posts** is licensed under the MIT License
