@@ -1,6 +1,6 @@
-# blogger-related-posts
+# Blogger Related Posts
 
-<img src="https://raw.githubusercontent.com/zkreations/blogger-related-posts/main/logo.png" align="left" />
+![logo](https://raw.githubusercontent.com/zkreations/blogger-related-posts/main/logo.png)
 
 [![V](https://img.shields.io/npm/v/blogger-related-posts)](https://www.npmjs.com/package/blogger-related-posts) [![L](https://img.shields.io/npm/l/blogger-related-posts)](LICENSE)
 
@@ -8,13 +8,13 @@
 
 ## Features
 
-- ✅ **Easy to use**: Just include the script and call the init() method — no setup hassle.
-- 🎨 **Customizable**: Style and configure related posts via options and data attributes.
-- ⚡ **Lightweight**: Minimal footprint with zero dependencies.
-- 💤 **Lazy loading**: Loads related posts efficiently using IntersectionObserver.
-- 🔀 **Shuffle algorithm**: Randomize the order of related posts using a shuffle algorithm.
-- ▶️ **YouTube integration**: Automatically retrieves video thumbnails from YouTube.
-- 🔎 **Always relevant**: Generates related content even when labels are missing.
+- **Easy to use**: Just include the script and call the init() method — no setup hassle.
+- **Customizable**: Style and configure related posts via options and data attributes.
+- **Lightweight**: Minimal footprint with zero dependencies.
+- **Lazy loading**: Loads related posts efficiently using IntersectionObserver.
+- **Shuffle algorithm**: Randomize the order of related posts using a shuffle algorithm.
+- **YouTube integration**: Automatically retrieves video thumbnails from YouTube.
+- **Always relevant**: Generates related content even when labels are missing.
 
 ## Requirements
 
