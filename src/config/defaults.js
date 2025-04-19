@@ -3,7 +3,7 @@
 export const defaults = {
   relatedSelector: '#blog-related',
   template: '<a class="related-item" href="{postUrl}"><div class="related-image"><img class="related-image-src" src="{featuredImage}" alt="thumbnail"></div><div class="related-title">{title}</div></a>',
-  textOnlyTemplate: '<a class="related-item" href="{postUrl}"><div class="related-title">{title}</div></a>',
+  textOnlyTemplate: null,
   defaultImage: '',
   directory: 'summary',
   imageParams: 's120-c',

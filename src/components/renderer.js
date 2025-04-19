@@ -61,9 +61,9 @@ export function createRelated ({ config, entries, container }) {
   })
 
   const html = entries.map(item => {
-    return item.featuredImage
-      ? templating(template, item)
-      : templating(textOnlyTemplate, item)
+    return textOnlyTemplate && !item.featuredImage
+      ? templating(textOnlyTemplate, item)
+      : templating(template, item)
   }).join('')
 
   container.innerHTML = html

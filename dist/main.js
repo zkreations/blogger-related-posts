@@ -9,7 +9,7 @@
   const defaults = {
     relatedSelector: '#blog-related',
     template: '<a class="related-item" href="{postUrl}"><div class="related-image"><img class="related-image-src" src="{featuredImage}" alt="thumbnail"></div><div class="related-title">{title}</div></a>',
-    textOnlyTemplate: '<a class="related-item" href="{postUrl}"><div class="related-title">{title}</div></a>',
+    textOnlyTemplate: null,
     defaultImage: '',
     directory: 'summary',
     imageParams: 's120-c',
@@ -312,7 +312,7 @@
       return sanitizeEntry(entry, config);
     });
     const html = entries.map(item => {
-      return item.featuredImage ? templating(template, item) : templating(textOnlyTemplate, item);
+      return textOnlyTemplate && !item.featuredImage ? templating(textOnlyTemplate, item) : templating(template, item);
     }).join('');
     container.innerHTML = html;
     container.classList.add('related-loaded');
