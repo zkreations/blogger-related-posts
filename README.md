@@ -51,7 +51,7 @@ new BloggerRelated().init()
 if you want to run JavaScript code after the related posts are generated, you can use the `init` method, which returns a promise that resolves when the related posts are ready:
 
 ```javascript
-new BloggerRelated().then(() => {
+new BloggerRelated().init().then(() => {
   // Your code here
 })
 ```
