@@ -6,7 +6,7 @@ export const defaults = {
   textOnlyTemplate: '<a class="related-item" href="{postUrl}"><div class="related-title">{title}</div></a>',
   defaultImage: '',
   directory: 'summary',
-  imageParams: 'w300-h225-p-k-no-nu-rw-l80-e30',
+  imageParams: 's120-c',
   maxResults: 5,
   observer: true,
   orderby: 'relevance',
