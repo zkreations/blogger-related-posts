@@ -11,6 +11,7 @@ export const defaults = {
   observer: true,
   orderby: 'relevance',
   postId: 0,
+  postTitle: document.title,
   rootMargin: '200px',
   shuffleLevel: 5,
   summaryLength: 120,
