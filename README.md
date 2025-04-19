@@ -8,11 +8,13 @@
 
 ## Features
 
-- **Simple to use**: Just include the script and call the `init` method.
-- **Customizable**: You can customize the related posts using options and data attributes.
-- **Lightweight**: The script is small and does not require any dependencies.
-- **Lazy loading**: Efficient loading of related posts using IntersectionObserver.
-- **Shuffle**: Randomize the order of related posts using a shuffle algorithm.
+- ✅ **Easy to use**: Just include the script and call the init() method — no setup hassle.
+- 🎨 **Customizable**: Style and configure related posts via options and data attributes.
+- ⚡ **Lightweight**: Minimal footprint with zero dependencies.
+- 💤 **Lazy loading**: Loads related posts efficiently using IntersectionObserver.
+- 🔀 **Shuffle algorithm**: Randomize the order of related posts using a shuffle algorithm.
+- ▶️ **YouTube integration**: Automatically retrieves video thumbnails from YouTube.
+- 🔎 **Always relevant**: Generates related content even when labels are missing.
 
 ## Requirements
 
@@ -78,6 +80,7 @@ You can customize **blogger-related-posts** using the following options:
 | `observer`            | Boolean | Use IntersectionObserver for lazy loading        | `true`                 |
 | `orderby`             | String  | Order by relevance or date                       | `relevance`            |
 | `postId`              | Number  | Post ID for the current post                     | `0`                    |
+| `postTitle`           | String  | Post title for the current post                  | `document.title`       |
 | `rootMargin`          | String  | Root margin for the IntersectionObserver         | `200px`                |
 | `shuffleLevel`        | Number  | Shuffle level for the related posts              | `5`                    |
 | `summaryLength`       | Number  | Maximum length of the summary                    | `120`                  |
