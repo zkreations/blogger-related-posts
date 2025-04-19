@@ -73,7 +73,7 @@ You can customize **blogger-related-posts** using the following options:
 | `textOnlyTemplate`    | String  | Template for the related posts without image     | See [defaults.js](src/config/defaults.js) |
 | `defaultImage`        | String  | Default image for the related posts              | `''`                   |
 | `directory`           | String  | Directory for the related posts                  | `summary`              |
-| `imageParams`         | String  | [Image parameters](http://zkreations.com/image-params) for the related posts | `w300-h225-p-k-no-nu-rw-l80-e30` |
+| `imageParams`         | String  | [Image parameters](http://zkreations.com/image-params) for the related posts | `s120-c` |
 | `maxResults`          | Number  | Maximum number of related posts                  | `5`                    |
 | `observer`            | Boolean | Use IntersectionObserver for lazy loading        | `true`                 |
 | `orderby`             | String  | Order by relevance or date                       | `relevance`            |
